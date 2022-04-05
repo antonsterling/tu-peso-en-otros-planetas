@@ -1,0 +1,13 @@
+.contenedor-main div {
+margin: 0px;
+}
+
+.contenedor-main .sol {
+    width: 110px;
+    height: 110px;
+}
+
+.contenedor-main .jupiter {
+    width: 80px;
+    height: 80px;
+}

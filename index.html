@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="celular.css" media="(max-width:400px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cookie&family=Dancing+Script:wght@500&display=swap"
+        rel="stylesheet">
+    
+    <title>Peso en otros planetas</title>
+</head>
+
+<body>
+    <header>
+        <section class="contenedor-intro">
+            <h1>¡Bienvenidos al espacio!</h1>
+            <p> ¡Felicidades!, estas a punto de iniciar un viaje a otro planeta.
+                En este punto podrás conocer cual es tu peso en el planeta que elijas de nuestro sistema solar. <br> <br>
+                1. Deberás escribir cuál es la tu masa aquí en la tierra. <br>
+                2. Luego deberás seleccionar la imagen del planeta donde deseas saber tu peso. </p>
+        </section>
+    </header>
+
+
+    <section class="contenedor-input">
+        <form>
+            <label for="input-peso"> Escribe cual es tu masa en la tierra: </label>
+            <input type="number" id="input-peso">
+            <span>Kg</span>
+        </form>
+
+        <p id="peso-final"></p>
+    </section>
+
+
+    <main>
+        <section class="contenedor-main">
+            <section class="primer-contenedor-planetas">
+                <div class="contenedor-mercurio">
+                    <p>Mercurio</p>
+                    <img src="./recursos/mercurio.png" alt="imagen de mercurio" class="mercurio"
+                        onclick="calcularPeso('mercurio')">
+                </div>
+                <div class="contenedor-venus">
+                    <p>Venus</p>
+                    <img src="./recursos/venus.png" alt="imagen de venus" class="venus" onclick="calcularPeso('venus')">
+                </div>
+                <div class="contenedor-tierra">
+                    <p>Tierra</p>
+                    <img src="./recursos/tierra.png" alt="imagen de la tierra" class="tierra"
+                        onclick="calcularPeso('tierra')">
+                </div>
+            </section>
+
+            <section class="segundo-contenedor-planetas">
+                <div class="contenedor-marte">
+                    <p>Marte</p>
+                    <img src="./recursos/marte.png" alt="imagen de marte" class="marte" onclick="calcularPeso('marte')">
+                </div>
+                <div class="contenedor-sol">
+                    <img src="./recursos/sol.png" alt="imagen del sol" class="sol">
+                </div>
+                <div class="contenedor-jupiter">
+                    <p>Jupiter</p>
+                    <img src="./recursos/jupiter.png" alt="imagen de jupiter" class="jupiter"
+                        onclick="calcularPeso('jupiter')">
+                </div>
+            </section>
+
+            <section class="tercer-contenedor-planetas">
+                <div class="contenedor-saturno">
+                    <p>Saturno</p>
+                    <img src="./recursos/saturno.png" alt="imagen de saturno" class="saturno"
+                        onclick="calcularPeso('saturno')">
+
+                </div>
+                <div class="contenedor-urano">
+                    <p>Urano</p>
+                    <img src="./recursos/urano.png" alt="imagen de urano" class="urano" onclick="calcularPeso('urano')">
+                </div>
+                <div class="contenedor-neptuno">
+                    <p>Neptuno</p>
+                    <img src="./recursos/neptuno.png" alt="imagen de neptuno" class="neptuno"
+                        onclick="calcularPeso('neptuno')">
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="peso-otros-planetas.js"></script>
+</body>
+
+</html>
