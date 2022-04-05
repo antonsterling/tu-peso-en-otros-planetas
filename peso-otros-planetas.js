@@ -5,13 +5,14 @@ function calcularPeso(planeta) {
     let peso = pesoIngresado.value;
 
     const g_mercurio = 3.7;
-    const g_venus = 3.7;
+    const g_venus = 8.87;
     const g_tierra = 9.8;
-    const g_marte = 3.7;
+    const g_marte = 3.71;
     const g_jupiter = 24.8;
-    const g_saturno = 24.8;
-    const g_urano = 24.8;
-    const g_neptuno = 24.8;
+    const g_saturno = 10.44;
+    const g_urano = 8.87;
+    const g_neptuno = 11.15;
+    const g_sol = 274;
 
     var pesofinalID = document.getElementById("peso-final");
     let peso_final;
@@ -64,5 +65,9 @@ function calcularPeso(planeta) {
             peso_final = peso_final.toFixed(2);
             pesofinalID.innerHTML = ("Tu peso en " + planeta + " es de: " + peso_final + " Kg-f");
             break;
+        case 'sol':
+            peso_final = peso * g_sol / g_tierra;
+            peso_final = peso_final.toFixed(2);
+            pesofinalID.innerHTML = ("Tu peso en " + planeta + " es de: " + peso_final + " Kg-f");
     }
 }
